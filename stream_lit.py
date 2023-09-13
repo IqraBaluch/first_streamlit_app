@@ -20,7 +20,7 @@ fruit_list = pandas.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/d
 fruit_list = fruit_list.set_index('Fruit')
 
 # lets put a pick list here so they can pick the fruits they want
-streamlit.multiselect("Pick some fruits", list(fruit_list.index))
+streamlit.multiselect("Pick some fruits", list(fruit_list.index),['Apple','Peach'])
 
 #display the table on the page
 streamlit.dataframe(fruit_list)
