@@ -1,5 +1,4 @@
 
-pip install snowflake-connector-python
 import streamlit
 
 import snowflake.connector
