@@ -1,5 +1,5 @@
-###--upgrade pip
 
+import snowflake.connector
 
 import streamlit
 
