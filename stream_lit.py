@@ -1,3 +1,4 @@
+import snowflake.connector
 import streamlit
 streamlit.title("Healthy Food")
 streamlit.header("Menu For Breackfast")
