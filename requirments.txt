@@ -1,4 +1,6 @@
 #requirments.txt
 snowflake-connector-python
+
+#versioning
 streamlit==1.25.0
 
