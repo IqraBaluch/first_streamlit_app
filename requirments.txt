@@ -1,6 +1,7 @@
 #requirments.txt
 #snowflake-connector-python
-pip install snowflake-connector-python
+pip install git+https://github.com/snowflakedb/snowflake-connector-python.git
+
 
 #versioning
 streamlit==1.25.0
