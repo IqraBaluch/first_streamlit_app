@@ -1,5 +1,6 @@
 #requirments.txt
-snowflake-connector-python
+#snowflake-connector-python
+pip install snowflake-connector-python
 
 #versioning
 streamlit==1.25.0
