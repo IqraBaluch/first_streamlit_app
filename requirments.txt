@@ -1,7 +1,8 @@
 #requirments.txt
-pip install snowflake-connector-python
+Uninstall snowflake
+#pip install snowflake-connector-python
 snowflake-connector-python
-pip install git+https://github.com/snowflakedb/snowflake-connector-python.git
+#pip install git+https://github.com/snowflakedb/snowflake-connector-python.git
 
 snowflake-connector-python
 
