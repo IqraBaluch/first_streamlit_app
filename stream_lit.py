@@ -1,6 +1,5 @@
 ###--upgrade pip
 
-snowflake-connector-python
 
 import streamlit
 
