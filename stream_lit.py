@@ -1,4 +1,8 @@
+/home/appuser/venv/bin/python -m pip install --upgrade pip
+
 import streamlit
+
+
 import snowflake.connector
 
 streamlit.title("Healthy Food")
