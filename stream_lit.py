@@ -1,6 +1,4 @@
-"""
-@Author : Saqib Mumtaz
-"""
+
 import requests
 import streamlit
 import pandas as pd
