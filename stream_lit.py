@@ -50,3 +50,16 @@ except URLError as e:
 
 streamlit.stop() #do not run anything past here.
 
+
+
+my_cur.execute(f'insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values {input}'
+Create a parameterized query with placeholders
+sql = 'INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES (?)'
+
+# Execute the query with the input values
+
+
+my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
+streamlit.dataframe(my_data_rows)
+
+
