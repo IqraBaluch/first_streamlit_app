@@ -37,8 +37,19 @@ streamlit.dataframe(my_data_rows)
 
 
 
-streamlit.write('Thanks for adding ', add_my_fruit)
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+
+#new section to display
+streamlit.header("Fruityvice Fruit Advice!")
+
+try:
+    fruit = streamlit.text_input('What fruit you would like to know about')
+    if not fruit:
+        streamlit.error('Please select the fruit from drop down you would like to know about')
+    else:
+        responce_back = my_fun(fruit)
+        streamlit.dataframe(responce_back)
+except URLError as e:
+    streamlit.error()
 
 
 
