@@ -48,44 +48,9 @@ except URLError as e:
     streamlit.error()
 
 
-streamlit.stop() #do not run anything past here.
-
-####################################
-
-input = streamlit.text_input('What fruit u would like to add in database')
-streamlit.write(f'you entered this fruit name : "{input}", Are you sure you want to add this?')
-import streamlit as st
-
-def my_fun_no():
-    st.write('Your record has not been added')
-def my_fun_yes():
-    st.write(f'Thanks for Adding: {input}')
-
-# Use a lambda function to pass my_fun as the on_click callback
-# No = st.button('No', on_click=lambda: my_fun(), type="secondary")
-No = st.button('No', type="secondary")
-Yes = st.button('Yes', type="secondary")
-if No == True:
-    my_fun_no()
-elif Yes == True:
-    my_fun_yes()
-    my_cur.execute(f"INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES ('{input}')")
-    streamlit.header("The updated list now:")
-    my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
-    my_data_rows = my_cur.fetchall()
-    st.dataframe(my_data_rows)
 
 
 
-# my_cur.execute(f'insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values {input}'
-# Create a parameterized query with placeholders
-# sql = 'INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES (?)'
-
-# Execute the query with the input values
-
-
-# my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
-# streamlit.dataframe(my_data_rows)
 
 
 
