@@ -33,10 +33,6 @@ show = df.loc[selected]
 
 streamlit.dataframe(show)
 
-
-#new section to display
-streamlit.header("Fruityvice Fruit Advice!")
-
 try:
     fruit = streamlit.text_input('What fruit you would like to know about')
     if not fruit:
@@ -46,6 +42,11 @@ try:
         streamlit.dataframe(responce_back)
 except URLError as e:
     streamlit.error()
+
+def fruity_vicedata(fruit):
+    
+
+
 
 
 streamlit.stop() #do not run anything past here.
