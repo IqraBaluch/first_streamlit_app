@@ -1,4 +1,3 @@
-
 import requests
 import streamlit
 import pandas as pd
@@ -33,6 +32,10 @@ show = df.loc[selected]
 
 streamlit.dataframe(show)
 
+
+#new section to display
+streamlit.header("Fruityvice Fruit Advice!")
+
 try:
     fruit = streamlit.text_input('What fruit you would like to know about')
     if not fruit:
@@ -42,11 +45,6 @@ try:
         streamlit.dataframe(responce_back)
 except URLError as e:
     streamlit.error()
-
-def fruity_vicedata(fruit):
-    
-
-
 
 
 streamlit.stop() #do not run anything past here.
@@ -79,23 +77,3 @@ elif Yes == True:
     my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
     my_data_rows = my_cur.fetchall()
     st.dataframe(my_data_rows)
-
-
-
-# my_cur.execute(f'insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values {input}'
-# Create a parameterized query with placeholders
-# sql = 'INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES (?)'
-
-# Execute the query with the input values
-
-
-# my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
-# streamlit.dataframe(my_data_rows)
-
-
-
-
-
-
-
-
