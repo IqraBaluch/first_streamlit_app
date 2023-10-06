@@ -50,6 +50,7 @@ try:
         streamlit.dataframe(responce_back)
 except URLError as e:
     streamlit.error()
+streamlit.stop() #do not run anything past here.
 
 
 
