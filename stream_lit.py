@@ -65,7 +65,7 @@ def my_fun_yes():
     st.write(f'Thanks for Adding: {input}')
 
 # Use a lambda function to pass my_fun as the on_click callback
-# No = st.button('No', on_click=lambda: my_fun(), type="secondary")
+No = st.button('No', on_click=lambda: my_fun(), type="secondary")
 No = st.button('No', type="secondary")
 Yes = st.button('Yes', type="secondary")
 if No == True:
