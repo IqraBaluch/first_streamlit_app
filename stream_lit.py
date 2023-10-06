@@ -3,13 +3,7 @@ import streamlit
 import pandas
 import snowflake.connector
 from urllib.error import URLError
-import logging
-import snowflake.connector
 
-# Set the logging level to DEBUG
-logging.basicConfig(level=logging.DEBUG)
-
-# Your Snowflake connection code here
 
 
 
