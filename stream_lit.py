@@ -50,12 +50,8 @@ except URLError as e:
 
 streamlit.stop() #do not run anything past here.
 
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
-my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
-my_data_rows = my_cur.fetchall()
-streamlit.header("The list contain:")
-streamlit.dataframe(my_data_rows)
+####################################
+
 input = streamlit.text_input('What fruit u would like to add in database')
 streamlit.write(f'you entered this fruit name : "{input}", Are you sure you want to add this?')
 import streamlit as st
