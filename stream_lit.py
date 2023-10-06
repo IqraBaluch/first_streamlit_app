@@ -53,7 +53,7 @@ streamlit.stop() #do not run anything past here.
 
 
 my_cur.execute(f'insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values {input}'
-#Create a parameterized query with placeholders
+#Create a parameterized query with placeholder
 sql = 'INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES (?)'
 
 # Execute the query with the input values
